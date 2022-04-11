@@ -52,7 +52,15 @@ def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
     return wordList[wordIndex]
 
-def displayBoard(missedLetters, correctLetters, secretWord):  
+
+def displayBoard(missedLetters, correctLetters, secretWord):
+    """
+    this function defines a  displayBoard. it has three parameters:
+    missedLetters A string of the letters the player has guessed that are not in the secret word
+    correctLetters A string of the letters the player has guessed that are in the secret word
+    secretWord A string of the secret word that the player is trying to guess
+    
+    """  
     print(HANGMAN_PICS[len(missedLetters)]) # call hangman pics after user choice
     print() 
     print('Missed letters:', end=' ')
