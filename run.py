@@ -46,7 +46,8 @@ words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthm
 # welcome the user
 name = input("What is Your name?")
 print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with uppercase letter always
-
+print("The objective of the game is to guess the secret word chosen by the computer.")
+print("You have 6 lifes.It's mean, You can miss 6 times.")
 # This function returns a random word from the passed list of strings
 def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
@@ -126,6 +127,8 @@ while True:
             displayBoard(missedLetters, correctLetters, secretWord)
             print('You have run out of guesses!\nSorry ', name.capitalize(), ' better luck next time.\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' + str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
             gameIsDone = True
+    
+    #Ask user if they want to play again (but only if the game is done).
     if gameIsDone:
         if playAgain():
             missedLetters = ''
