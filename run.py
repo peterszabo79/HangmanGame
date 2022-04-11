@@ -1,7 +1,7 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-import random
+import random, time
 #source from inventwithpython.com
 HANGMAN_PICS = ['''
   +---+
@@ -46,8 +46,13 @@ words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthm
 # welcome the user
 name = input("What is Your name?")
 print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with uppercase letter always
+time.sleep(1)
+
 print("The objective of the game is to guess the secret word chosen by the computer.")
+time.sleep(2)
+
 print("You have 6 lifes.It's mean, You can miss 6 times.")
+time.sleep(1)
 # This function returns a random word from the passed list of strings
 def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
