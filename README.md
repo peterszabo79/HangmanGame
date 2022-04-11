@@ -31,9 +31,13 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 Happy coding!
 
 # Hangman Game
-## Welcome to [The Doors Quiz](https://peterszabo79.github.io/project-no2/index.html)!
+## 1. Purpose of the project
 
-### The Doors Quiz contains 13 easy questions about a famous rock band: The DOORS, to measure the basic knowledge about the band. Users who try this small test can choose from three answers - all answers are music related, just need to choose the right ones.
+### Hangman is a Python terminal game, wich runs in the Code Institute mock terminal on Heroku.
+
+Users guess the right word by entering the right letters.
+Words are choosen from rd.com - hardest spelling words in english.They only have six lives, so if they guess six times wrong, they are executed!
+for the live site click
 ![respon](assets/images/respon.jpeg)
 
 ---

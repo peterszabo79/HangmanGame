@@ -1,8 +1,9 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-import random, time
-#source from inventwithpython.com
+import random
+import time
+# source from inventwithpython.com
 HANGMAN_PICS = ['''
   +---+
       |
@@ -41,17 +42,21 @@ HANGMAN_PICS = ['''
      ===''']
 
 # Add words to the game 
-words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthma apropos receipt knead nauseous honest'.split()
+words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic\
+     liquefy asthma apropos receipt knead nauseous honest'.split()
 
 # welcome the user
 name = input("What is Your name?")
-print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with uppercase letter always
+print ("Hello", name.capitalize(), "let's start \
+playing Hangman!")#name will start with uppercase letter always
 time.sleep(1)
 
-print("The objective of the game is to guess the secret word chosen by the computer.")
+print("The objective of the game is ,\
+to guess the secret word chosen by the computer.")
 time.sleep(2)
 
-print("You can guess only one letter at a time. Please use only lowercase letters! Don't forget to press 'enter key' after each guess.")
+print("You can guess only one letter at a time.\
+Please use only lowercase letters! Don't forget to press 'enter key' after each guess.")
 time.sleep(3)
 
 print("You have 6 lifes.It's mean, You can miss 6 times.")
