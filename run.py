@@ -39,13 +39,15 @@ HANGMAN_PICS = ['''
  /|\  |
  / \  |
      ===''']
-#add words to the game 
+     
+# Add words to the game 
 words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthma apropos receipt knead nauseous honest'.split()
 
-#welcome the user
+# welcome the user
 name = input("What is Your name?")
-print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with big letter always
+print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with uppercase letter always
 
+# This function returns a random word from the passed list of strings
 def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
     return wordList[wordIndex]
