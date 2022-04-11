@@ -39,7 +39,7 @@ HANGMAN_PICS = ['''
  /|\  |
  / \  |
      ===''']
-     
+
 # Add words to the game 
 words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthma apropos receipt knead nauseous honest'.split()
 
@@ -51,3 +51,19 @@ print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will sta
 def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
     return wordList[wordIndex]
+
+def displayBoard(missedLetters, correctLetters, secretWord):  
+    print(HANGMAN_PICS[len(missedLetters)]) # call hangman pics after user choice
+    print() 
+    print('Missed letters:', end=' ')
+    for letter in missedLetters:
+        print(letter, end=' ')
+    print()
+    blanks = '_' * len(secretWord)
+
+    for i in range(len(secretWord)): # replace blanks with correctly guessed letters
+        if secretWord[i] in correctLetters:
+            blanks = blanks[:i] + secretWord[i] + blanks[i+1:]
+    for letter in blanks:
+        print(letter,end=' ')
+    print()
