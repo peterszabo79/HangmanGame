@@ -126,3 +126,11 @@ while True:
             displayBoard(missedLetters, correctLetters, secretWord)
             print('You have run out of guesses!\nSorry ', name.capitalize(), ' better luck next time.\nAfter ' + str(len(missedLetters)) + ' missed guesses and ' + str(len(correctLetters)) + ' correct guesses, the word was "' + secretWord + '"')
             gameIsDone = True
+    if gameIsDone:
+        if playAgain():
+            missedLetters = ''
+            correctLetters = ''
+            gameIsDone = False
+            secretWord = getRandomWord(words)
+        else:
+            break
