@@ -51,8 +51,11 @@ time.sleep(1)
 print("The objective of the game is to guess the secret word chosen by the computer.")
 time.sleep(2)
 
+print("You can guess only one letter at a time. Please use only lowercase letters! Don't forget to press 'enter key' after each guess.")
+time.sleep(3)
+
 print("You have 6 lifes.It's mean, You can miss 6 times.")
-time.sleep(1)
+time.sleep(2)
 # This function returns a random word from the passed list of strings
 def getRandomWord(wordList):
     wordIndex = random.randint(0, len(wordList) -1)
