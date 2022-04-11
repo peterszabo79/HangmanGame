@@ -41,3 +41,11 @@ HANGMAN_PICS = ['''
      ===''']
 #add words to the game 
 words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic liquefy asthma apropos receipt knead nauseous honest'.split()
+
+#welcome the user
+name = input("What is Your name?")
+print ("Hello", name.capitalize(), "let's start playing Hangman!")#name will start with big letter always
+
+def getRandomWord(wordList):
+    wordIndex = random.randint(0, len(wordList) -1)
+    return wordList[wordIndex]
