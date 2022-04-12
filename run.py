@@ -44,8 +44,7 @@ words = 'chthonic phlegm pterodactyl muscle dilate indict mnemonic\
 
 # welcome the user
 name = input("What is Your name?")
-print ("Hello", name.capitalize(), "let's start \
-playing Hangman!").  # name will start with uppercase letter always
+print ("Hello", name.capitalize(), "let's start playing Hangman!")
 time.sleep(1)
 
 print("The objective of the game is ,\
