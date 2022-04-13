@@ -1,10 +1,10 @@
 # Hangman Game
 ## 1. Purpose of the project
 
-Hangman is a Python terminal game, wich runs in the Code Institute mock terminal on Heroku.
+Hangman is a Python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
 Users guess the right word by entering the right letters.
-Words are choosen from rd.com - hardest spelling words in english.They only have six lives, so if they guess six times wrong, they are executed!
+Words are chosen from rd.com - hardest spelling words in English. They only have six lives, so they are executed if they guess six times wrong!
 ![Am I Responsive](/images/imresponsive.jpeg)
 for the live site click
 [here](https://project3hangman.herokuapp.com/)
@@ -12,7 +12,7 @@ for the live site click
 ---
 
 ## 2. How to play
- The user can play this game by entering letters into the terminal. They must guess the letters correctly with no morethan six wrong guesses. The word will appear as "----", but if the user guesses the right letter, then the letter will appear instead of "-". When the user enters a letter they have already guessed before, or puts a character that is invalid, they get a warning and must guess again. The user must guess all the letters in the word to win.
+ The user can play this game by entering letters into the terminal. They must guess the letters correctly with no more than six wrong guesses. The word will appear as "----", but if the user guesses the right letter, then the letter will appear instead of "-". When the user enters a letter they have already guessed before, or puts an invalid character, they get a warning and must guess again. The user must guess all the letters in the word to win.
 ## 3. features
  ### existing features
  - Name input screen 
@@ -20,16 +20,16 @@ for the live site click
  ![name input](/images/name.jpeg)
 
  - Welcome screen
-   - Welcom the user and explain the game rules.
+   - Welcome the user and explain the game rules
 ![welcome screen](/images/welcome.jpeg)
 
  - The winning screen
-   - Congratulate the user if find a right word.
+   - congratulate the user
    - ask for a new game
   ![win](/images/win.jpeg)
 
  - The lost screen  
-   - tell user, had to many wrong guesses
+   - tell user, had too many wrong guesses
    - show the correct word 
    - ask for a new game
    ![lost](/images/lost.jpeg)
@@ -40,7 +40,7 @@ for the live site click
   ![wrongcaracter](/images/wrong.jpeg)
 
 ### Features Left to Implement
-- Whis to add levels -easy-medium-hard to the words, let the user make a choice
+- Wish to add levels -easy-medium-hard to the words, let the user make a choice
 
 ## 4. Technology
 These are the Technology I used for this project.
@@ -65,12 +65,12 @@ I have tested this project by doing the following:
 - Tested in my local terminal and the Code Institute Heroku terminal.
 
 # Bugs
-- When I passed my code on PEP8 online checker,run into multiple warnings.
+- When I passed my code on the PEP8 online checker, run into multiple warnings.
 They are fixed now.
   - E501 - line too long
   - W291 - trailing whitespace
   - W293 - blank line contains whitespace
-  - E302 - expected 2 blank lines, found 1
+  - E302 - expected 2 blank  lines, found 1
 
 
 
@@ -81,10 +81,10 @@ This game was deployed to GitHub pages :
 
 1. In gitpod workspaces
 2. I choose the right workspace/repo
-3. Now i can write my code and readme
-4. To save my code I Type in the terminal : git add .
+3. Now I can write my code and readme
+4. To save my code I Type in the terminal: git add.
 5. I type git commit -m "comment"
-6. I type git push to push it to github
+6. I type git push to push it to GitHub
 
 ### Heroku
 
@@ -110,5 +110,5 @@ This game was deployed to GitHub pages :
 <li>stackoverflow.com helped me from the beginning through to the finish of my project</li>
 <li>My second project - The Doors Quiz helped me for writing my README. </li>
 <li>Slack  #peer-code-review helped me writing my README.</li>
-<li>Timer from "yo.fun"</li>
+<li>rd.com - for my secret words</li>
 </details>
